@@ -7,47 +7,128 @@
   <style>
     body {
       margin: 0;
-      min-height: 100vh;
       background: #050505;
       color: #f4e7c5;
       font-family: Georgia, serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
     }
+
     .container {
-      padding: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 24px;
     }
+
     .logo {
       width: min(500px, 90%);
       height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
-    h1 {
-      font-size: clamp(3rem, 10vw, 7rem);
-      margin: 0;
-      letter-spacing: 0.08em;
-    }
-    p {
-      font-size: 1.25rem;
-      letter-spacing: 0.12em;
+
+    .coming-soon {
       color: #c66a24;
-      margin-top: 20px;
+      font-size: 1.2rem;
+      letter-spacing: 0.18em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
     }
+
+    .tagline {
+      font-size: 1.3rem;
+      letter-spacing: 0.12em;
+      color: #f4e7c5;
+      margin-bottom: 12px;
+    }
+
     .sub {
       color: #8a8f55;
       font-size: 1rem;
-      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #c66a24;
+      letter-spacing: 0.12em;
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .menu {
+      display: grid;
+      gap: 28px;
+      text-align: left;
+    }
+
+    .pizza {
+      border-top: 1px solid rgba(244, 231, 197, 0.25);
+      padding-top: 20px;
+    }
+
+    .pizza h3 {
+      margin: 0 0 8px;
+      color: #f4e7c5;
+      font-size: 1.35rem;
+      letter-spacing: 0.04em;
+    }
+
+    .pizza p {
+      margin: 0;
+      color: #c9bc9c;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+
+    footer {
+      margin-top: 60px;
+      color: #8a8f55;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <main class="container">
     <img src="bayou-fire-logo.png" alt="Bayou Fire Logo" class="logo">
-    <p>HAND STRETCHED. FIRE FINISHED.</p>
+
+    <div class="coming-soon">Coming Soon</div>
+
+    <div class="tagline">HAND STRETCHED. FIRE FINISHED.</div>
     <div class="sub">Houston's Gulf Coast Pizza Pop-Up</div>
+
+    <section>
+      <h2>Launch Menu</h2>
+
+      <div class="menu">
+        <div class="pizza">
+          <h3>The Marais</h3>
+          <p>Our Gulf Coast take on a classic Margherita with tomato sauce, whole milk mozzarella, fresh basil, Parmesan, olive oil, and Bayou Dust.</p>
+        </div>
+
+        <div class="pizza">
+          <h3>Pepperoni</h3>
+          <p>A simple, perfectly fired pepperoni pizza with tomato sauce, mozzarella, cup-and-char pepperoni, Parmesan, and Bayou Dust.</p>
+        </div>
+
+        <div class="pizza">
+          <h3>Hot Honey</h3>
+          <p>Pepperoni, mozzarella, fresh jalapeños, Parmesan, and a drizzle of Bayou hot honey for a sweet heat finish.</p>
+        </div>
+
+        <div class="pizza">
+          <h3>The Bayou</h3>
+          <p>Andouille sausage, roasted red peppers, mozzarella, green onion, Parmesan, and Bayou Dust for a subtle Gulf Coast signature.</p>
+        </div>
+
+        <div class="pizza">
+          <h3>The Smokehouse</h3>
+          <p>Smoked brisket, mozzarella, smoked gouda, pickled red onion, parsley, cracked black pepper, and olive oil on a white base.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Bayou Fire Pizza &bull; Dayton / Houston, Texas
+    </footer>
   </main>
 </body>
 </html>
-
